@@ -66,6 +66,7 @@ class GameScene: SKScene {
         target = self.childNode(withName: "target") as? SKSpriteNode
         target?.physicsBody = SKPhysicsBody(circleOfRadius: target!.size.width / 2)
         target?.physicsBody?.categoryBitMask = targetCategory
+        target?.physicsBody?.collisionBitMask = 0 // nece se pomerati prilikom udara
     }
     
     func createEnemy (type: Enemies, forTrack track:Int) -> SKShapeNode? {
@@ -206,11 +207,34 @@ class GameScene: SKScene {
 
     }
     
+    
+    
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
     }
 }
 
-extension SKPhysicsContactDelegate {
+extension GameScene: SKPhysicsContactDelegate {
+    
+    func didBegin(_ contact: SKPhysicsContact) {
+        var playerBody: SKPhysicsBody
+        var otherBody: SKPhysicsBody
+        
+        if contact.bodyA.categoryBitMask < contact.bodyB.categoryBitMask {
+            playerBody = contact.bodyA
+            otherBody = contact.bodyB
+            
+            
+        } else {
+            playerBody = contact.bodyB
+            otherBody = contact.bodyA
+        }
+        
+        if playerBody.categoryBitMask == playerCategory && otherBody.categoryBitMask  == enemyCategory {
+            print("Enemey hit")
+        }else if playerBody.categoryBitMask == playerCategory && otherBody.categoryBitMask  == targetCategory {
+            print("Target hit")
+        }
+    }
     
 }

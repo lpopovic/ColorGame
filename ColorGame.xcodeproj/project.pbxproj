@@ -78,8 +78,9 @@
 		D058022122AC445B006314C4 /* ColorGame */ = {
 			isa = PBXGroup;
 			children = (
+				D058025222AC712C006314C4 /* Particles */,
+				D058025122AC710A006314C4 /* Game Scenes */,
 				D058022222AC445B006314C4 /* AppDelegate.swift */,
-				D058024922AC59FF006314C4 /* GameScene.sks */,
 				D058024B22AC5A97006314C4 /* pulse.sks */,
 				D058024F22AC5CA0006314C4 /* fireworks.sks */,
 				D058022622AC445B006314C4 /* Actions.sks */,
@@ -106,6 +107,21 @@
 				D058024122AC44CD006314C4 /* levelUp.wav */,
 			);
 			path = Sounds;
+			sourceTree = "<group>";
+		};
+		D058025122AC710A006314C4 /* Game Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D058024922AC59FF006314C4 /* GameScene.sks */,
+			);
+			path = "Game Scenes";
+			sourceTree = "<group>";
+		};
+		D058025222AC712C006314C4 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Particles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
