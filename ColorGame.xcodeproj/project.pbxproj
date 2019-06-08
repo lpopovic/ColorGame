@@ -29,6 +29,7 @@
 		D058025C22AC7979006314C4 /* StartScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D058025822AC7978006314C4 /* StartScene.sks */; };
 		D058025D22AC7979006314C4 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D058025922AC7978006314C4 /* GameOverScene.swift */; };
 		D058025E22AC7979006314C4 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D058025A22AC7979006314C4 /* StartScene.swift */; };
+		D058026022AC7B53006314C4 /* ScrollingBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = D058025F22AC7B53006314C4 /* ScrollingBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		D058025822AC7978006314C4 /* StartScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartScene.sks; sourceTree = "<group>"; };
 		D058025922AC7978006314C4 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
 		D058025A22AC7979006314C4 /* StartScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
+		D058025F22AC7B53006314C4 /* ScrollingBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				D058025922AC7978006314C4 /* GameOverScene.swift */,
 				D058025322AC726F006314C4 /* GameElements.swift */,
 				D058025522AC727C006314C4 /* GameFunctions.swift */,
+				D058025F22AC7B53006314C4 /* ScrollingBackground.swift */,
 				D058022C22AC445B006314C4 /* Main.storyboard */,
 				D058022F22AC445C006314C4 /* Assets.xcassets */,
 				D058023A22AC44CD006314C4 /* Sounds */,
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D058025622AC727C006314C4 /* GameFunctions.swift in Sources */,
+				D058026022AC7B53006314C4 /* ScrollingBackground.swift in Sources */,
 				D058025E22AC7979006314C4 /* StartScene.swift in Sources */,
 				D058025422AC726F006314C4 /* GameElements.swift in Sources */,
 				D058022922AC445B006314C4 /* GameScene.swift in Sources */,
