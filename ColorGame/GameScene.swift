@@ -29,6 +29,10 @@ class GameScene: SKScene {
     var directionArray = [Bool]()
     var velocityArray = [Int]()
     
+    let playerCategory: UInt32 = 0x1 << 0
+    let enemyCategory: UInt32 = 0x1 << 1
+    let targetCategory: UInt32 = 0x1 << 2
+    
     func setupTracks(){
         for i in 0 ... 8 {
             if let track = self.childNode(withName: "\(i)") as? SKSpriteNode {
@@ -39,6 +43,11 @@ class GameScene: SKScene {
 
     func createPlayer() {
         player = SKSpriteNode(imageNamed: "player")
+        player?.physicsBody = SKPhysicsBody(circleOfRadius: player!.size.width / 2)
+        player?.physicsBody?.linearDamping = 0
+        player?.physicsBody?.categoryBitMask = playerCategory
+        player?.physicsBody?.collisionBitMask = 0 // deactive  all colision
+        player?.physicsBody?.contactTestBitMask = enemyCategory | targetCategory // notif when colision player
         
         guard let playerPosition = tracksArray?.first?.position.x else {
             return
@@ -81,7 +90,7 @@ class GameScene: SKScene {
         enemySprite.position.y = up ? -130 : self.size.height + 130
         
         enemySprite.physicsBody = SKPhysicsBody(edgeLoopFrom: enemySprite.path!)
-        
+        enemySprite.physicsBody?.categoryBitMask = enemyCategory
         enemySprite.physicsBody?.velocity = up ? CGVector(dx: 0, dy: velocityArray[track]) : CGVector(dx: 0, dy: -velocityArray[track])
         
         return enemySprite
