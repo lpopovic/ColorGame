@@ -28,6 +28,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     // MARK: HUD
     var timeLabel:SKLabelNode?
     var scoreLabel:SKLabelNode?
+    
     var currentScore:Int = 0 {
         didSet {
             self.scoreLabel?.text = "SCORE: \(self.currentScore)"
