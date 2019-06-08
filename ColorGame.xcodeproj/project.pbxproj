@@ -22,7 +22,8 @@
 		D058024722AC44CE006314C4 /* fail.wav in Resources */ = {isa = PBXBuildFile; fileRef = D058024022AC44CD006314C4 /* fail.wav */; };
 		D058024822AC44CE006314C4 /* levelUp.wav in Resources */ = {isa = PBXBuildFile; fileRef = D058024122AC44CD006314C4 /* levelUp.wav */; };
 		D058024A22AC59FF006314C4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D058024922AC59FF006314C4 /* GameScene.sks */; };
-		D058024C22AC5A97006314C4 /* spark.sks in Resources */ = {isa = PBXBuildFile; fileRef = D058024B22AC5A97006314C4 /* spark.sks */; };
+		D058024C22AC5A97006314C4 /* pulse.sks in Resources */ = {isa = PBXBuildFile; fileRef = D058024B22AC5A97006314C4 /* pulse.sks */; };
+		D058025022AC5CA1006314C4 /* fireworks.sks in Resources */ = {isa = PBXBuildFile; fileRef = D058024F22AC5CA0006314C4 /* fireworks.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +44,8 @@
 		D058024022AC44CD006314C4 /* fail.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fail.wav; sourceTree = "<group>"; };
 		D058024122AC44CD006314C4 /* levelUp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = levelUp.wav; sourceTree = "<group>"; };
 		D058024922AC59FF006314C4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		D058024B22AC5A97006314C4 /* spark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = spark.sks; sourceTree = "<group>"; };
+		D058024B22AC5A97006314C4 /* pulse.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = pulse.sks; sourceTree = "<group>"; };
+		D058024F22AC5CA0006314C4 /* fireworks.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = fireworks.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +80,8 @@
 			children = (
 				D058022222AC445B006314C4 /* AppDelegate.swift */,
 				D058024922AC59FF006314C4 /* GameScene.sks */,
-				D058024B22AC5A97006314C4 /* spark.sks */,
+				D058024B22AC5A97006314C4 /* pulse.sks */,
+				D058024F22AC5CA0006314C4 /* fireworks.sks */,
 				D058022622AC445B006314C4 /* Actions.sks */,
 				D058022822AC445B006314C4 /* GameScene.swift */,
 				D058022A22AC445B006314C4 /* GameViewController.swift */,
@@ -167,10 +170,11 @@
 				D058024522AC44CE006314C4 /* background.wav in Resources */,
 				D058024622AC44CE006314C4 /* levelCompleted.wav in Resources */,
 				D058024822AC44CE006314C4 /* levelUp.wav in Resources */,
+				D058025022AC5CA1006314C4 /* fireworks.sks in Resources */,
 				D058024A22AC59FF006314C4 /* GameScene.sks in Resources */,
 				D058023022AC445C006314C4 /* Assets.xcassets in Resources */,
 				D058024322AC44CE006314C4 /* move.wav in Resources */,
-				D058024C22AC5A97006314C4 /* spark.sks in Resources */,
+				D058024C22AC5A97006314C4 /* pulse.sks in Resources */,
 				D058023322AC445C006314C4 /* LaunchScreen.storyboard in Resources */,
 				D058022722AC445B006314C4 /* Actions.sks in Resources */,
 				D058024722AC44CE006314C4 /* fail.wav in Resources */,
