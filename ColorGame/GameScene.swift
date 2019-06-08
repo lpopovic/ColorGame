@@ -9,7 +9,7 @@
 import SpriteKit
 import GameplayKit
 
-enum Enemies {
+enum Enemies: Int {
     case small
     case medium
     case large
@@ -86,6 +86,16 @@ class GameScene: SKScene {
         return enemySprite
         
     }
+    
+    func spwanEnemies() {
+        for i in 1 ... 7 {
+            let randomEnemyType = Enemies(rawValue: GKRandomSource.sharedRandom().nextInt(upperBound: 3))!
+            if let newEnemy = createEnemy(type: randomEnemyType, forTrack: i) {
+                self.addChild(newEnemy)
+            }
+        }
+    }
+    
     override func didMove(to view: SKView) {
         
         setupTracks()
@@ -100,6 +110,11 @@ class GameScene: SKScene {
             }
         }
        
+        // call loop
+        self.run(SKAction.repeatForever(SKAction.sequence([SKAction.run({
+            self.spwanEnemies()
+        }), SKAction.wait(forDuration: 2)])))
+        
     }
     
     func moveVertically (up:Bool) {
