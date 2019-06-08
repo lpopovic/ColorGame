@@ -56,6 +56,7 @@ class GameScene: SKScene {
     func createEnemy (type: Enemies, forTrack track:Int) -> SKShapeNode? {
         
         let enemySprite = SKShapeNode()
+        enemySprite.name = "ENEMY"
         
         switch type {
         case .small:
@@ -94,6 +95,14 @@ class GameScene: SKScene {
                 self.addChild(newEnemy)
             }
         }
+        
+        // delete enemy koji se nevide
+        self.enumerateChildNodes(withName: "ENEMY") { (node, nil) in
+            if node.position.y < -150 || node.position.y > self.size.height + 150 {
+                node.removeFromParent()
+            }
+        }
+        
     }
     
     override func didMove(to view: SKView) {
