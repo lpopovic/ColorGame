@@ -60,19 +60,22 @@ class GameScene: SKScene {
             if node?.name == "right" {
                 print("MOVE RIGHT")
             } else if node?.name == "up" {
+                moveVertically(up: true)
                 print("MOVE UP")
             } else if node?.name == "down" {
                 print("MOVE DOWN")
+                moveVertically(up: false)
             }
         }
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
+        player?.removeAllActions()
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
+        player?.removeAllActions()
+
     }
     
     override func update(_ currentTime: TimeInterval) {
