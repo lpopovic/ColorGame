@@ -19,6 +19,7 @@ class GameScene: SKScene {
     
     var tracksArray: [SKSpriteNode]? = [SKSpriteNode]()
     var player: SKSpriteNode?
+    var target:SKSpriteNode?
     
     var currenttrack = 0
     var movingToTrack = false
@@ -60,6 +61,11 @@ class GameScene: SKScene {
         player?.addChild(pulse)
         pulse.position = CGPoint(x: 0, y: 0)
         
+    }
+    func createTarget() {
+        target = self.childNode(withName: "target") as? SKSpriteNode
+        target?.physicsBody = SKPhysicsBody(circleOfRadius: target!.size.width / 2)
+        target?.physicsBody?.categoryBitMask = targetCategory
     }
     
     func createEnemy (type: Enemies, forTrack track:Int) -> SKShapeNode? {
@@ -118,6 +124,9 @@ class GameScene: SKScene {
         
         setupTracks()
         createPlayer()
+        createTarget()
+        
+        self.physicsWorld.contactDelegate = self
         
         if let numberOfTracks = tracksArray?.count {
             for _ in 0 ... numberOfTracks {
@@ -200,4 +209,8 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
     }
+}
+
+extension SKPhysicsContactDelegate {
+    
 }
