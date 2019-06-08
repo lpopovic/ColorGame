@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D058022322AC445B006314C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D058022222AC445B006314C4 /* AppDelegate.swift */; };
-		D058022522AC445B006314C4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D058022422AC445B006314C4 /* GameScene.sks */; };
 		D058022722AC445B006314C4 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = D058022622AC445B006314C4 /* Actions.sks */; };
 		D058022922AC445B006314C4 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D058022822AC445B006314C4 /* GameScene.swift */; };
 		D058022B22AC445B006314C4 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D058022A22AC445B006314C4 /* GameViewController.swift */; };
@@ -22,12 +21,13 @@
 		D058024622AC44CE006314C4 /* levelCompleted.wav in Resources */ = {isa = PBXBuildFile; fileRef = D058023F22AC44CD006314C4 /* levelCompleted.wav */; };
 		D058024722AC44CE006314C4 /* fail.wav in Resources */ = {isa = PBXBuildFile; fileRef = D058024022AC44CD006314C4 /* fail.wav */; };
 		D058024822AC44CE006314C4 /* levelUp.wav in Resources */ = {isa = PBXBuildFile; fileRef = D058024122AC44CD006314C4 /* levelUp.wav */; };
+		D058024A22AC59FF006314C4 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D058024922AC59FF006314C4 /* GameScene.sks */; };
+		D058024C22AC5A97006314C4 /* spark.sks in Resources */ = {isa = PBXBuildFile; fileRef = D058024B22AC5A97006314C4 /* spark.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D058021F22AC445B006314C4 /* ColorGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D058022222AC445B006314C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D058022422AC445B006314C4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		D058022622AC445B006314C4 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		D058022822AC445B006314C4 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		D058022A22AC445B006314C4 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +42,8 @@
 		D058023F22AC44CD006314C4 /* levelCompleted.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = levelCompleted.wav; sourceTree = "<group>"; };
 		D058024022AC44CD006314C4 /* fail.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = fail.wav; sourceTree = "<group>"; };
 		D058024122AC44CD006314C4 /* levelUp.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = levelUp.wav; sourceTree = "<group>"; };
+		D058024922AC59FF006314C4 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		D058024B22AC5A97006314C4 /* spark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = spark.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				D058022222AC445B006314C4 /* AppDelegate.swift */,
-				D058022422AC445B006314C4 /* GameScene.sks */,
+				D058024922AC59FF006314C4 /* GameScene.sks */,
+				D058024B22AC5A97006314C4 /* spark.sks */,
 				D058022622AC445B006314C4 /* Actions.sks */,
 				D058022822AC445B006314C4 /* GameScene.swift */,
 				D058022A22AC445B006314C4 /* GameViewController.swift */,
@@ -161,12 +164,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D058022E22AC445B006314C4 /* Main.storyboard in Resources */,
-				D058022522AC445B006314C4 /* GameScene.sks in Resources */,
 				D058024522AC44CE006314C4 /* background.wav in Resources */,
 				D058024622AC44CE006314C4 /* levelCompleted.wav in Resources */,
 				D058024822AC44CE006314C4 /* levelUp.wav in Resources */,
+				D058024A22AC59FF006314C4 /* GameScene.sks in Resources */,
 				D058023022AC445C006314C4 /* Assets.xcassets in Resources */,
 				D058024322AC44CE006314C4 /* move.wav in Resources */,
+				D058024C22AC5A97006314C4 /* spark.sks in Resources */,
 				D058023322AC445C006314C4 /* LaunchScreen.storyboard in Resources */,
 				D058022722AC445B006314C4 /* Actions.sks in Resources */,
 				D058024722AC44CE006314C4 /* fail.wav in Resources */,
