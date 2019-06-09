@@ -21,6 +21,8 @@ class GameOverScene : SKScene {
         lastScoreLabel = self.childNode(withName: "lastScoreLabel") as? SKLabelNode
         bestScoreLabel = self.childNode(withName: "bestScoreLabel") as? SKLabelNode
     
+        lastScoreLabel?.text = "\(GameHandler.sharedInstance.score)"
+        bestScoreLabel?.text = "\(GameHandler.sharedInstance.highScore)"
         
         playButton = self.childNode(withName: "startButton") as? SKSpriteNode
         
@@ -40,7 +42,7 @@ class GameOverScene : SKScene {
             if node == playButton {
                 let transition = SKTransition.fade(withDuration: 1)
                 if let gameScene = SKScene(fileNamed: "GameScene") {
-                    gameScene.scaleMode = .aspectFill
+                    gameScene.scaleMode = .aspectFit
                     self.view?.presentScene(gameScene,transition: transition)
                 }
             }

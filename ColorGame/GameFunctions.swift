@@ -35,7 +35,7 @@ extension GameScene {
     func moveToNextTrack() {
         player?.removeAllActions()
         movingToTrack = true
-        
+        if let trackArray = tracksArray, (currentTrack + 1) >= trackArray.count {return}
         guard let nextTrack = tracksArray?[currentTrack + 1].position else {return}
         
         if let player = self.player {
@@ -121,6 +121,9 @@ extension GameScene {
     }
     
     func gameOver() {
+        
+        GameHandler.sharedInstance.saveGameStats()
+        
         self.run(SKAction.playSoundFileNamed("levelCompleted.wav", waitForCompletion: true))
         
         let transition = SKTransition.fade(withDuration: 1)
