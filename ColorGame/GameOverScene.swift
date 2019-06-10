@@ -2,8 +2,9 @@
 //  GameOverScene.swift
 //  ACGame
 //
-//  Created by Brian Advent on 16.06.17.
-//  Copyright © 2017 Brian Advent. All rights reserved.
+//  Created by MacBook Air on 6/9/19.
+//  Copyright © 2019 Riitech. All rights reserved.
+//
 //
 
 import SpriteKit
