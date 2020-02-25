@@ -96,9 +96,9 @@
 				D058022A22AC445B006314C4 /* GameViewController.swift */,
 				D058025222AC712C006314C4 /* Particles */,
 				D058025122AC710A006314C4 /* Game Scenes */,
-				D058022822AC445B006314C4 /* GameScene.swift */,
 				D058025A22AC7979006314C4 /* StartScene.swift */,
 				D058025922AC7978006314C4 /* GameOverScene.swift */,
+				D058022822AC445B006314C4 /* GameScene.swift */,
 				D058025322AC726F006314C4 /* GameElements.swift */,
 				D058025522AC727C006314C4 /* GameFunctions.swift */,
 				D058025F22AC7B53006314C4 /* ScrollingBackground.swift */,
@@ -383,14 +383,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7UKR2YNB5L;
+				DEVELOPMENT_TEAM = XQALFL32WM;
 				INFOPLIST_FILE = ColorGame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.riitech.ColorGame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.riitech.ColorGameTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -402,14 +402,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7UKR2YNB5L;
+				DEVELOPMENT_TEAM = XQALFL32WM;
 				INFOPLIST_FILE = ColorGame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.riitech.ColorGame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.riitech.ColorGameTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
