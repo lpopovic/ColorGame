@@ -13,7 +13,7 @@
 * [Build and Runtime Requirements](#build-and-runtime-requirements)
 * [How to run](#how-to-run)
 * [Status](#status)
-* [Inspiration](#sources)
+* [Inspiration](#inspiration)
 
 ## General info
 This project is a copy of the application Color Track. 
